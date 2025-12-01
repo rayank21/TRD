@@ -2,10 +2,30 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const stats = [
-    { label: "Années d'expérience", value: "15" },
-    { label: "Véhicules en flotte", value: "500+" },
-    { label: "Colis livrés / an", value: "10M+" },
-    { label: "Pays desservis", value: "28" },
+    {
+        id: '01',
+        value: '15',
+        label: 'Années d\'Expérience',
+        sub: 'Depuis 2009'
+    },
+    {
+        id: '02',
+        value: '45+',
+        label: 'Véhicules',
+        sub: 'Flotte Propriétaire'
+    },
+    {
+        id: '03',
+        value: '24/7',
+        label: 'Disponibilité',
+        sub: 'Support & Astreinte'
+    },
+    {
+        id: '04',
+        value: '98%',
+        label: 'Satisfaction',
+        sub: 'Clients B2B'
+    }
 ];
 
 const Stats = () => {
@@ -27,6 +47,9 @@ const Stats = () => {
                             </span>
                             <span className="font-mono text-gray-400 text-xs uppercase tracking-widest">
                                 {stat.label}
+                            </span>
+                            <span className="font-body text-gray-600 text-[10px] mt-1">
+                                {stat.sub}
                             </span>
                         </motion.div>
                     ))}

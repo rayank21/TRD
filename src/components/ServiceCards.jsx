@@ -78,9 +78,7 @@ const ServiceCards = () => {
                             {/* Content */}
                             <div className="relative z-10 p-8 md:p-12 h-full flex flex-col justify-between text-white transition-colors duration-300">
                                 <div className="flex justify-between items-start">
-                                    <span className="font-mono text-accent text-sm border border-accent px-2 py-1 bg-ink/80 backdrop-blur-sm group-hover:bg-white group-hover:text-ink group-hover:border-white transition-all duration-300">
-                                        REF_{service.id}
-                                    </span>
+                                    <div></div> {/* Spacer to keep Arrow on right */}
                                     <ArrowUpRight className="text-accent group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
                                 </div>
 
